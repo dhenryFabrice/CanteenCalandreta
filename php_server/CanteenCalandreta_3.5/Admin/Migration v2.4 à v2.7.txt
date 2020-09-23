@@ -1,0 +1,69 @@
+1) MAJ de la table Bills :
+ALTER TABLE `Bills` CHANGE `BillDate` `BillDate` DATETIME NOT NULL;
+
+2) Création des tables CanteenRegistrationsChildrenHabits, ExitPermissions, LaundryRegistrations et SnackRegistrations :
+-- 
+-- Structure de la table `CanteenRegistrationsChildrenHabits`
+-- 
+
+CREATE TABLE `CanteenRegistrationsChildrenHabits` (
+  `CanteenRegistrationChildHabitID` mediumint(8) unsigned NOT NULL auto_increment,
+  `CanteenRegistrationChildHabitProfil` smallint(5) unsigned NOT NULL,
+  `CanteenRegistrationChildHabitRate` tinyint(3) unsigned NOT NULL default '0',
+  `CanteenRegistrationChildHabitType` tinyint(3) unsigned NOT NULL default '0',
+  `ChildID` smallint(5) unsigned NOT NULL,
+  PRIMARY KEY  (`CanteenRegistrationChildHabitID`),
+  KEY `ChildID` (`ChildID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Table which contains profil habits of children for canteen.';
+
+
+-- 
+-- Structure de la table `ExitPermissions`
+-- 
+
+CREATE TABLE IF NOT EXISTS `ExitPermissions` (
+  `ExitPermissionID` mediumint(8) unsigned NOT NULL auto_increment,
+  `ExitPermissionDate` date NOT NULL,
+  `ExitPermissionName` varchar(100) NOT NULL,
+  `ExitPermissionAuthorizedPerson` tinyint(3) unsigned NOT NULL default '1',
+  `ChildID` smallint(5) unsigned NOT NULL,
+  PRIMARY KEY  (`ExitPermissionID`),
+  KEY `ChildID` (`ChildID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Table which contains exit permissions of children.';
+
+-- --------------------------------------------------------
+
+-- 
+-- Structure de la table `LaundryRegistrations`
+-- 
+
+CREATE TABLE IF NOT EXISTS `LaundryRegistrations` (
+  `LaundryRegistrationID` mediumint(8) unsigned NOT NULL auto_increment,
+  `LaundryRegistrationDate` date NOT NULL,
+  `FamilyID` smallint(5) unsigned NOT NULL,
+  PRIMARY KEY  (`LaundryRegistrationID`),
+  KEY `FamilyID` (`FamilyID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Table which contains laundry registrations for families.';
+
+-- --------------------------------------------------------
+
+-- 
+-- Structure de la table `SnackRegistrations`
+-- 
+
+CREATE TABLE IF NOT EXISTS `SnackRegistrations` (
+  `SnackRegistrationID` mediumint(8) unsigned NOT NULL auto_increment,
+  `SnackRegistrationDate` date NOT NULL,
+  `SnackRegistrationClass` tinyint(3) unsigned NOT NULL,
+  `FamilyID` smallint(5) unsigned NOT NULL,
+  PRIMARY KEY  (`SnackRegistrationID`),
+  KEY `FamilyID` (`FamilyID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Table which contains snack registrations for families.';
+
+3) MAJ fichiers php/js/css
+
+4) Mettre dans le cron les scripts suivants :
+SendEmailLaundryReminder.php
+SendEmailSnackDuringWeekReminder.php
+SendEmailSnackReminder.php
+SendEmailWarningTooManyCanteenRegistrations.php

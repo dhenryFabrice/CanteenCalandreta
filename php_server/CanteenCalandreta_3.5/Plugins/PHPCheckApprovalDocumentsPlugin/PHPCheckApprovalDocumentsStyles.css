@@ -1,0 +1,19 @@
+#ApprovalDocumentsArea {
+  margin-top: 2px;
+  margin-right: 1em;
+  margin-bottom: 2em;
+  padding-right: .5em;
+  background: #eee;
+  float: right;
+  border: 1px solid #888;
+  clear: both;
+}
+
+#ApprovalDocumentsArea dt {
+  background-image: none;
+}
+
+#ApprovalDocumentsArea dd {
+  margin-top: 0;
+  margin-bottom: 0;
+}

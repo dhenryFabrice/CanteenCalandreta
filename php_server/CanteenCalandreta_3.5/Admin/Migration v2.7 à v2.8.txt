@@ -1,0 +1,44 @@
+1) MAJ de la table SupportMembers : ajouter le champ FamilyID
+ALTER TABLE `SupportMembers` ADD `FamilyID` SMALLINT UNSIGNED NULL AFTER `SupportMemberStateID` ;
+ALTER TABLE `SupportMembers` ADD INDEX ( `FamilyID` ) ;
+
+2) Initialiser la valeur du champ FamilyID dans la table SupportMembers pour faire correspondre chaque compte de type 5 à un ID de la table Families (FamilyID) :
+UPDATE SupportMembers s INNER JOIN Families f ON (s.SupportMemberLastname = f.FamilyLastname) 
+SET s.FamilyID = f.FamilyID 
+WHERE s.SupportMemberStateID = 5
+
+3) Création des tables WorkGroups et WorkGroupRegistrations :
+-- 
+-- Structure de la table `WorkGroupRegistrations`
+-- 
+
+CREATE TABLE `WorkGroupRegistrations` (
+  `WorkGroupRegistrationID` smallint(5) unsigned NOT NULL auto_increment,
+  `WorkGroupRegistrationDate` datetime NOT NULL,
+  `WorkGroupRegistrationLastname` varchar(50) NOT NULL,
+  `WorkGroupRegistrationFirstname` varchar(25) NOT NULL,
+  `WorkGroupRegistrationEmail` varchar(100) NOT NULL,
+  `WorkGroupRegistrationReferent` tinyint(3) unsigned NOT NULL default '0',
+  `WorkGroupID` tinyint(3) unsigned NOT NULL default '1',
+  `FamilyID` smallint(5) unsigned default NULL,
+  `SupportMemberID` smallint(5) unsigned NOT NULL,
+  PRIMARY KEY  (`WorkGroupRegistrationID`),
+  KEY `WorkGroupID` (`WorkGroupID`,`FamilyID`),
+  KEY `WorkGroupRegistrationReferent` (`WorkGroupRegistrationReferent`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Table which contains registrations for workgroups.';
+
+-- --------------------------------------------------------
+
+-- 
+-- Structure de la table `WorkGroups`
+-- 
+
+CREATE TABLE `WorkGroups` (
+  `WorkGroupID` tinyint(3) unsigned NOT NULL,
+  `WorkGroupName` varchar(50) NOT NULL,
+  `WorkGroupDescription` varchar(255) default NULL,
+  `WorkGroupEmail` varchar(100) default NULL,
+  PRIMARY KEY  (`WorkGroupID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Table which contains workgroups.';
+
+4) MAJ fichiers php/js/css

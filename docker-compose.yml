@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+    web:
+        build: ./php_server/
+        ports:
+            - "80:80"
+#        volumes:
+#            - ./CanteenCalandreta:/var/www/html
+        links:
+            - db:db
+    db:
+        image: mysql:5.5
+        volumes:
+            - ./mysql:/var/lib/mysql
+        ports:
+            - "3306:3306"
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_DATABASE=CantineProd
+            - MYSQL_USER=mydb_user
+            - MYSQL_PASSWORD=mydb_password
+    myadmin:
+        image: phpmyadmin/phpmyadmin
+        ports:
+            - "8080:80"
+        links:
+            - db:db

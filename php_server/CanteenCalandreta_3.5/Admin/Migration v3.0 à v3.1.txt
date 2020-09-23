@@ -1,0 +1,21 @@
+1) Ajout des champs FamilyMainEmailContactAllowed et FamilySecondEmailContactAllowed dans la table Families :
+ALTER TABLE `Families` ADD `FamilyMainEmailContactAllowed` TINYINT UNSIGNED NOT NULL DEFAULT '0' AFTER `FamilyMainEmail` ;
+ALTER TABLE `Families` ADD `FamilySecondEmailContactAllowed` TINYINT UNSIGNED NOT NULL DEFAULT '0' AFTER `FamilySecondEmail` ;
+
+2) Ajout du champ ChildEmail dans la table Children (VARCHAR 100) :
+ALTER TABLE `Children` ADD `ChildEmail` VARCHAR( 100 ) NULL AFTER `ChildWithoutPork` ;
+
+3) Création de la table DiscountsFamilies :
+CREATE TABLE `DiscountsFamilies` (
+`DiscountFamilyID` MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`DiscountFamilyType` TINYINT UNSIGNED NOT NULL DEFAULT '0',
+`DiscountFamilyReasonType` TINYINT UNSIGNED NOT NULL DEFAULT '0',
+`DiscountFamilyReason` VARCHAR( 255 ) NULL ,
+`DiscountFamilyDate` DATETIME NOT NULL ,
+`DiscountFamilyAmount` DECIMAL( 10, 2 ) NOT NULL DEFAULT '0.00',
+`FamilyID` SMALLINT UNSIGNED NOT NULL ,
+INDEX ( `FamilyID` )
+) ENGINE = MYISAM COMMENT = 'Table which contains discounts of families';
+
+
+4) MAJ fichiers php/js/css

@@ -1,0 +1,25 @@
+1) Création des tables DocumentsApprovals et DocumentsFamiliesApprovals :
+CREATE TABLE `DocumentsApprovals` (
+  `DocumentApprovalID` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `DocumentApprovalDate` datetime NOT NULL,
+  `DocumentApprovalName` varchar(255) NOT NULL,
+  `DocumentApprovalFile` varchar(255) NOT NULL,
+  `DocumentApprovalType` tinyint(3) UNSIGNED NOT NULL,
+  INDEX(`DocumentApprovalType`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Table which contains documents to approve';
+
+CREATE TABLE `DocumentsFamiliesApprovals` (
+  `DocumentFamilyApprovalID` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `DocumentFamilyApprovalDate` datetime NOT NULL,
+  `DocumentFamilyApprovalComment` varchar(255) DEFAULT NULL,
+  `DocumentApprovalID` smallint(5) UNSIGNED NOT NULL,
+  `SupportMemberID` smallint(5) UNSIGNED NOT NULL,
+  INDEX ( `SupportMemberID` )
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Table which contains approvals of families';
+
+
+2) Ajout du champ FamilyAnnualContributionBalance dans la table Families :
+ALTER TABLE `Families` ADD `FamilyAnnualContributionBalance` DECIMAL(10,2) NOT NULL DEFAULT '0.00' AFTER `FamilyMonthlyContributionMode`;
+
+
+3) MAJ fichiers php/js/css

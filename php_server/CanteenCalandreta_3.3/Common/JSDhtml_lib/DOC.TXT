@@ -1,0 +1,177 @@
+----------------------------------------------------------------------------------------------
+
+DHTML Librairie docs (Version 2.3 - 17/12/2000) - Compatibilité IE5 / NS4.x-NS6.x
+Copyrigth ED Prod - javascript-lab@nexen.net - http://javascript-lab.nexen.net
+
+17/12/2000 - Le Drag&drop est de nouveau actif
+02/01/2001 - Compatibilité avec NS4.x de nouveau en place (en plus de NS6.x)
+
+N'oubliez pas de joindre cette doc si vous proposez ce script en telechargement
+
+Merci a:
+--------
+* "Maxence VAN JONES" <mvanjone@club-internet.fr> 
+  Pour l'idée de la fonction MoveObj() (Merci! c'etait la grosse prise de tete a faire! :) )
+  Ainsi que l'ajout de la notion de profondeur (Z-Index) aux objets crées
+
++---------------------------------+------------------------------------------------------------
+| Installation sur une page html: |
++---------------------------------+
+
+*entre les balise <HEAD> et </HEAD> inserez ce code:
+
+ <SCRIPT LANGUAGE="javascript" src="dhtml_lib.js"></SCRIPT>
+ ou
+ <SCRIPT LANGUAGE="javascript" src="dhtml_lib_lite.js"></SCRIPT> (pour la version allégée)
+
+*ensuite dans la balise <BODY>, ajouter la fonction animator() de cette façon:
+
+ <BODY ONLOAD="animator(15);">
+
+*Ensuite, heu, inspirez vous des exemples, ils sont la pour ça...
+
++----------------------------+-----------------------------------------------------------------
+| Définitions des fonctions: |
++----------------------------+
+
+ *CreerObj(nom,px,py,tx,ty,visible,zindex,contenu,special,dragdrop) 
+ -Creation d'un objet (DIV)
+  nom: nom de l'objet (utilisé par la suite pour manipuler l'objet, il faut un nom different pour chaque objet)
+  px & py: position de depart de l'objet en pixel (coordonnées absolues)
+  tx & ty: taille de l'objet en pixel
+  visible: 1=objet visible, 0=objet invisible
+  zindex: Les objets ayant un petit Zindex (par ex: 1) seront cachés par ceux ayant un plus grand nombre (par ex: 2).
+  contenu: contenu (en HTML) de l'objet
+  special: parametres speciaux ( onclick, etc... )
+  dragdrop: 1=Obj 'drag&dropable', 0=Obj non-'drag&dropable'
+  (REMARQUE: Le 'Drag & Drop' est actif sur tous les objets créés avec la fonction CreerObj et uniquement sur ceux-ci.)
+
+ *CreerZone(nom,x1,y1,x2,y2)
+ -Creation d'une zone de clipping sur l'objet (tout ce qui sera en dehors des coordonnées ci-dessous sera invisible, uniquement a l'intérieur de l'objet visé)
+  nom: nom de l'objet visé
+  x1,y1: coin superieur gauche
+  x2,y2: coin inferieur droit
+  
+ *PlacerObj(nom,px,py)
+ -placement d'un objet
+  nom: nom de l'objet a deplacer
+  px & py: nouvelle coordonnées de l'objet en pixel (coordonnées absolues)
+
+ *CacherObj(nom)
+ -Rendre invisible un objet
+  nom: nom de l'objet visé 
+
+ *VoirObj(nom)
+ -Rendre visible un objet
+  nom: nom de l'objet visé 
+
+ *ObjX(nom)
+ -Retourne la position en X de l'objet (coordonnées absolues)
+  nom: nom de l'objet visé
+
+ *ObjY(nom)
+ -retourne la position en Y de l'objet (coordonnées absolues)
+  nom: nom de l'objet visé
+
+ *ModifierObj(nom,contenu)
+ -Modifier le contenu de l'objet
+  nom: nom de l'objet visé
+  contenu: nouveau contenu de l'objet
+   
+ *SourisX()
+ -retourne la position X du pointeur
+
+ *SourisY()
+ -retourne la position Y du pointeur
+
+ *TailleX()
+ -retourne la taille (ou plutot la taille du corps du document) en X de la fenetre en pixel
+
+ *TailleY()
+ -retourne la taille (ou plutot la taille du corps du document) en Y de la fenetre en pixel
+
+ *OffsetX()
+ -retourne la position de l'ascenseur horizontal de la fenetre
+
+ *OffsetY()
+ -retourne la position de l'ascenseur vertical de la fenetre
+
+ *MoveObj(nom,x1,y1,x2,y2,nbi)
+ -déplacement (glissement) d'un objet
+  nom: nom de l'objet a deplacer
+  x1 & y1: coordonnées de depart de l'objet en pixel (coordonnées absolues) (une valeur de -1 utilise la position actuelle de l'obj)
+  x2 & y2: coordonnées d'arrivée de l'objet en pixel (coordonnées absolues)
+  nbi: nombre de déplacement entre les 2 coordonnées (plus le chiffre est petit plus l'animation est rapide)
+
+ *BounceObj(nom,x1,y1,y2,vit)
+ -déplacement (Rebond) d'un objet
+  nom: nom de l'objet a deplacer
+  x1 & y1: coordonnées de depart de l'objet en pixel (coordonnées absolues)  (une valeur de -1 utilise la position actuelle de l'obj)
+  y2: coordonnée a laquelle l'objet rebondie (coordonnées absolues)
+  vit: vitesse a laquelle tombe l'objet
+
+ *RotateObj(nom,x1,y1,rx,ry,debut,fin,vit)
+ -rotation d'un objet
+  nom: nom de l'objet a deplacer
+  x1 & y1: coordonnées du centre de rotation de l'objet en pixel (coordonnées absolues) (une valeur de -1 utilise la position actuelle de l'obj)
+  rx & ry: rayon de rotation de l'objet en pixel
+  debut & fin: si egale a -1, la rotation est infinie, sinon elle s'effectura de debut a fin (compris entre 0 et 359 degré)
+  vit: vitesse de rotation
+
+ *RevealObj(nom,ox1,oy1,ox2,oy2,ex1,ey1,ey2,ey2,vitx,vity)
+ -revelation d'un objet
+  nom: nom de l'objet a reveler
+  ox1,oy1,ox2,oy2: Surface de depart visible (coordonnées absolues) 
+  ex1,ey1,ex2,ey2: Surface d'arrivée visible (coordonnées absolues) 
+  vitx: nombre de déplacement entre les 2 points X (plus le chiffre est petit plus l'animation est rapide)
+  vity: nombre de déplacement entre les 2 points Y (plus le chiffre est petit plus l'animation est rapide)
+
+ *FixObj(nom,x1,y1)
+ -Fixer un objet (position relative a la taille de la fenetre)
+  nom: nom de l'objet a fixer
+  x1 & y1: definie la position X et Y en pourcentage (par ex: 50,50 place l'obj au milieu de la fenetre quelle que soit sa taille)
+
+ *PassObj(nom,x1,y1,x2,y2,nbi)
+ -déplacement (glissement) d'un objet indefiniment (identique a moveObj mais en boucle)
+  nom: nom de l'objet a deplacer
+  x1 & y1: coordonnées de depart de l'objet en pixel (coordonnées absolues) (une valeur de -1 utilise la position actuelle de l'obj)
+  x2 & y2: coordonnées d'arrivée de l'objet en pixel (coordonnées absolues)
+  nbi: nombre de déplacement entre les 2 coordonnées (plus le chiffre est petit plus l'animation est rapide)
+
+ *FadeBG(r1,g1,b1,r2,g2,b2,nbi)
+ -Changement progressif de la couleur du fond
+  r1, g1 & b1:  composante rouge,vert,bleu de la couleur de depart
+  r2, g2 & b2:  composante rouge,vert,bleu de la couleur d'arrivée
+  nbi: nombre de palier entre les 2 couleurs (plus le chiffre est petit plus l'animation est rapide)
+
+ *FallObj(nom,x1,y1,y2,vitx,vity)
+ -simule un objet qui tombe
+  nom: nom de l'objet a deplacer
+  x1 & y1: coordonnées de depart de l'objet en pixel (coordonnées absolues)  (une valeur de -1 utilise la position actuelle de l'obj)
+  y2: coordonnée a laquelle l'objet s'arrete (coordonnées absolues)
+  vitx: velocité de départ en x de l'obj
+  vity: velocité de départ en y de l'obj
+
+ *ChangeIndex(nom,valeur)
+ -Changer le Zindex d'un objet
+  nom: nom de l'objet
+  valeur: nouvelle valeur du Zindex
+
+ *Animator(temps)
+ -Cette fonction gére les animations
+  temps: nombre de millisecond entre chaque appelle de cette fonction (en général, on met 15)
+
+ *AddCom(donnees,delai)
+ -Cette fonction ajoute une nouvelle suite de commandes a l'E.C.A. (voir definition plus loin)
+  donnees: les données, qui ne sont autres que les fonctions precedentes (PlacerObj,VoirObj,MoveObj,RotateObj,etc...)
+  delai: délai d'attente avant l'éxecution des données suivantes.
+
+ *c'est quoi l'E.C.A: ces trois lettres signifient 'Enchaineur de Commande Automatique'. C'est un petit
+  bout de code qui permet de 'scénariser' les mouvements des objets suivant un timing définie par l'utilisateur.
+  E.C.A. est inclue dans la fonction animator(). Un exemple est fournie dans l'archive (eca_demo.htm).
+  Quelles sont les commandes de l'E.C.A.? : Toutes les fonctions definie plus haut, en fait l'E.C.A. evalue
+  des instructions javascript a un momment donné, donc toutes les commandes javascript sont autorisées.
+  L'E.C.A. posséde tout de meme deux commandes internes, la commande: 'LOOP;', qui permet de redemarrer l'E.C.A. 
+  depuis le début. Elle est utilisée dans l'exemple et la commande 'CLEAR;' qui efface toutes les
+  commandes précédemment entrées.
+ 

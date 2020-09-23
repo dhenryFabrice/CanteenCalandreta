@@ -1,0 +1,22 @@
+#RegisteredFamiliesSubEventsList {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+}
+
+#RegisteredFamiliesSubEventsList dt {
+  margin: 0;
+  padding: 0;
+  background: none;
+  font-weight: bold;
+}
+
+#RegisteredFamiliesSubEventsList dt:hover {
+  cursor: pointer;
+  color: #f00;
+}
+
+#RegisteredFamiliesSubEventsList dd {
+  margin: 0 0 0 2em;
+  display: none;
+}

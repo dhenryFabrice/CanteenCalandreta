@@ -1,0 +1,7 @@
+1) MAJ de la table Bills :
+ALTER TABLE `Bills` ADD `BillNurseryNbDelays` TINYINT UNSIGNED NOT NULL DEFAULT '0' AFTER `BillNurseryAmount` ;
+
+2) MAJ de la table NurseryRegistrations :
+ALTER TABLE `NurseryRegistrations` ADD `NurseryRegistrationIsLate` TINYINT UNSIGNED NOT NULL DEFAULT '0' AFTER `NurseryRegistrationChildClass` ;
+
+3) MAJ fichiers php/js/css

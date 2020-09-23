@@ -1,0 +1,9 @@
+div.RetractArea {
+  padding: 0px;
+  overflow: auto;
+}
+
+a.retractArealink img {
+  border: 0px;
+}
+

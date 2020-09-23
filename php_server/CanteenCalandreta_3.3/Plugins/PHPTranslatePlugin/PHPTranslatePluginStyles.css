@@ -1,0 +1,46 @@
+#PHPTranslatePluginInfoBox {
+ top: -200px;
+ left: -200px;
+ min-height: 25px;
+ min-width: 100px;
+ max-width: 300px;
+ padding: 7px;
+
+ display: table;
+ vertical-align: middle;
+
+ opacity: 0.7;
+
+ background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #000000),
+        color-stop(1, #73736B)
+ );
+ background-image: -o-linear-gradient(bottom, #000000 0%, #73736B 100%);
+ background-image: -moz-linear-gradient(bottom, #000000 0%, #73736B 100%);
+ background-image: -webkit-linear-gradient(bottom, #000000 0%, #73736B 100%);
+ background-image: -ms-linear-gradient(bottom, #000000 0%, #73736B 100%);
+ background-image: linear-gradient(to bottom, #000000 0%, #73736B 100%);
+
+ border: 2px solid #f0b133;
+ border-radius: 15px;
+
+ color: #fff;
+ text-align: center;
+}
+
+#PHPTranslatePluginInfoBox p {
+ display: table-cell;
+ vertical-align: middle;
+
+ padding: 0;
+ margin: 0;
+ margin-left: auto;
+ margin-right: auto;
+
+ font-weight: bold;
+ font-size: 7pt;
+}
+

@@ -1,0 +1,54 @@
+1) Création des tables des stats, des fichiers attachés, les salles de réunion et les réservations des salles de réunion :
+CREATE TABLE `MeetingRooms` (
+`MeetingRoomID` tinyint(3) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `MeetingRoomName` varchar(100) NOT NULL,
+  `MeetingRoomRestrictions` varchar(255) DEFAULT NULL,
+  `MeetingRoomEmail` varchar(255) DEFAULT NULL,
+  `MeetingRoomActivated` tinyint(3) unsigned NOT NULL DEFAULT '1'
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COMMENT='Table which contains meeting rooms.';
+
+CREATE TABLE `MeetingRoomsRegistrations` (
+`MeetingRoomRegistrationID` mediumint(8) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `MeetingRoomRegistrationDate` datetime NOT NULL,
+  `MeetingRoomRegistrationTitle` varchar(100) NOT NULL,
+  `MeetingRoomRegistrationStartDate` datetime NOT NULL,
+  `MeetingRoomRegistrationEndDate` datetime NOT NULL,
+  `MeetingRoomRegistrationMailingList` varchar(255) DEFAULT NULL,
+  `MeetingRoomRegistrationDescription` mediumtext,
+  `SupportMemberID` smallint(5) unsigned NOT NULL,
+  `MeetingRoomID` tinyint(3) unsigned NOT NULL,
+  `EventID` mediumint(8) unsigned DEFAULT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COMMENT='Table which contains registrations of meeting rooms.';
+
+CREATE TABLE `Stats` (
+`StatID` int(10) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `StatPeriod` varchar(20) NOT NULL,
+  `StatType` varchar(30) NOT NULL,
+  `StatSubType` varchar(30) DEFAULT NULL,
+  `StatValue` decimal(10,2) NOT NULL DEFAULT '0.00'
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COMMENT='Table which contains some stats about the application.';
+
+CREATE TABLE `UploadedFiles` (
+`UploadedFileID` mediumint(8) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `UploadedFileObjectType` tinyint(3) unsigned NOT NULL,
+  `UploadedFileDate` datetime NOT NULL,
+  `UploadedFileName` varchar(255) NOT NULL,
+  `UploadedFileDescription` varchar(255) DEFAULT NULL,
+  `ObjectID` mediumint(8) unsigned NOT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COMMENT='Table which contains uploaded files linked to application''s objects.';
+
+ALTER TABLE `MeetingRoomsRegistrations` ADD KEY `SupportMemberID` (`SupportMemberID`), ADD KEY `EventID` (`EventID`), ADD KEY `MeetingRoomID` (`MeetingRoomID`);
+ALTER TABLE `Stats` ADD KEY `StatPeriod` (`StatPeriod`,`StatType`);
+ALTER TABLE `UploadedFiles` ADD KEY `ObjectID` (`ObjectID`);
+
+
+3) Ajout du champ NurseryRegistrationOtherTimeslots dans la table NurseryRegistrations :
+ALTER TABLE `NurseryRegistrations` ADD `NurseryRegistrationOtherTimeslots` TINYINT UNSIGNED NULL AFTER `NurseryRegistrationForPM`;
+
+
+5) Ajout des champs BillNbCanteenRegistrations et BillNbNurseryRegistrations dans la table Bills :
+ALTER TABLE `Bills` ADD `BillNbCanteenRegistrations` TINYINT UNSIGNED NULL DEFAULT NULL AFTER `BillMonthlyContribution`;
+ALTER TABLE `Bills` ADD `BillNbNurseryRegistrations` TINYINT UNSIGNED NULL DEFAULT NULL AFTER `BillWithoutMealAmount`;
+
+
+5) MAJ fichiers php/js/css

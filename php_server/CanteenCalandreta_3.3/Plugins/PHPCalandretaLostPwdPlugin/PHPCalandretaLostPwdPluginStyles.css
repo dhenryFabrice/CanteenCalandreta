@@ -1,0 +1,42 @@
+div.PHPLostPwdPlugin {
+  margin: 0 auto 1em auto;
+  width: 22.5em;
+}
+
+div.PHPLostPwdPlugin p {
+  font-size: 1em;
+  color: #00f;
+}
+
+div.PHPLostPwdPlugin p em {
+  cursor: pointer;
+}
+
+#LostPwdFormArea {
+  margin: 0.5em 1em 1em 0;
+  padding: 0 .5em .5em 0;
+}
+
+#LostPwdFormArea fieldset {
+  border: 1px solid #f0b133;
+  background: #f7e3a1;
+}
+#LostPwdFormArea fieldset legend {
+  border: 1px solid #f0b133;
+  background: #f7e3a1;
+  padding: .25em 1em .25em 1em;
+}
+
+#LostPwdFormArea form {
+  margin-left: 0;
+  paddingleft: 0;
+}
+
+#LostPwdFormArea input {
+  margin-top: .5em;
+}
+
+#bSubmitLostPwdPlugin {
+  margin-left: .5em;
+}
+

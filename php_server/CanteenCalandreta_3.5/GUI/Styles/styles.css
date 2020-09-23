@@ -1,0 +1,1003 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  scrollbar-3dlight-color: #d2d2d6;
+  scrollbar-highlight-color: #cbcbff;
+  scrollbar-darkshadow-color: #000080;
+  scrollbar-shadow-color: #0004ad;
+  scrollbar-face-color: #6b71d6;
+  scrollbar-arrow-color: #cbcbff;
+  scrollbar-track-color: #cecbff;
+  background: #fff;
+  color: #000;
+  font-size: .8em;
+  font-family: Verdana, Arial, Helvetica, serif;
+}
+
+body.WhitePage {
+  min-height: 23em;
+  //height: 25em;
+}
+
+a.Accessibility {
+  position: absolute;
+  left: -999px;
+}
+
+
+/***** Web page styles *****/
+#webpage {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+
+  display: table;  // To have the header fitting the width of the content 
+}
+
+
+/***** Header styles *****/
+#header {
+  margin: 0;
+  padding: 0 1em 0em 1em;
+  background: #ccf url('header.jpg') repeat-x;
+  height: 92px;
+  border-bottom: 1px solid #000084;
+}
+
+#header h1 {
+  position: absolute;
+  left: 30px;
+  background: url('CanteenCalandreta.png') no-repeat;
+  padding: 25px 0 20px 330px;
+  font-family: Arial, Verdana, Helvetica, serif;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+#header #logo {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  margin: 0;
+  background: url('') no-repeat;
+  width: 110px;
+  height: 92px;
+}
+
+
+/***** Main menu styles *****/
+#mainmenu {
+  height: 20px !important;
+  height: 23px;
+  margin: -22px 0 0 0;
+  background: none !important;
+  background: #ccf;
+  padding: 0 1em 0 3em;
+  border-bottom: 0px !important;
+  border-bottom: 1px solid #000084;
+  list-style-type: none;
+}
+
+#mainmenu li {
+  //width: 120px;
+  //text-align: center;
+  margin-right: 2em !important;
+  margin-right: 1em;
+  display: inline;
+  font-size: .85em;
+}
+
+#mainmenu a {
+  padding: .2em .5em .3em .5em !important;
+  color: #31458c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#mainmenu a:hover {
+  color: #c63;
+  text-decoration: underline;
+}
+
+#quitapp {
+  position: absolute;
+  top: 72px;
+  right: 10px;
+}
+
+#quitapp a img {
+  border: 0;
+}
+
+
+/***** Content page styles *****/
+#content {
+  margin: 0;
+  padding: 0 .5em .5em .5em;
+  //text-align: center;
+}
+
+#content h2, #content #page h2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+  font-size: 2.3em;
+  text-align: center;
+}
+
+#content h3 {
+  margin-top: 2.5em;
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 1.2em;
+}
+
+#content p {
+  text-align: justify;
+}
+
+#content a {
+  //font-size: 9pt;
+  font-weight: normal;
+  color: #00f;
+  text-decoration: none;
+}
+
+#content a:hover {
+  color: #f00;
+  text-decoration: underline;
+}
+
+#content a img {
+  border: 0;
+}
+
+#content acronym {
+  cursor: help;
+  font-style: italic;
+}
+
+#content p.InfoMsg, #content p.goback {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+#content p.InfoInstruction {
+  margin: 1em 5em 2em 5em;
+  text-align: center;
+}
+
+#content p.VisualFlags {
+  margin: 0;
+  text-align: center;
+}
+
+#content p.CheckAllButton {
+  margin: 0;
+}
+
+#content p.ErrorMsg {
+  font-size: 9pt;
+  font-weight: bold;
+  color: #f00;
+  text-align: center;
+}
+
+#content p.ConfirmationMsg {
+  font-size: 9pt;
+  color: #000;
+  text-align: center;
+}
+
+#content p.intranet {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+#content p.toolbar {
+  margin-top: 2em;
+  margin-bottom: 0;
+  font-size: .85em;
+  text-align: center;
+}
+
+#content ul.TableLegend, #content ul.TableLegendCSS_Style {
+  list-style-type: none;
+  font-size: .85em;
+}
+
+#content ul.TableLegendCSS_Style li {
+  margin-bottom: .5em;
+}
+
+.ExecutionTime {
+  font-size: 7pt;
+}
+
+.ErrorMsg {
+  font-size: 9pt;
+  font-weight: bold;
+  text-align: justify;
+  color: #f00;
+  vertical-align: top;
+}
+
+.WarningInstruction {
+  color: #00f;
+  text-decoration: blink;
+}
+
+.ConfirmationMsg {
+  font-size: 9pt;
+  text-align: justify;
+  color: #000;
+  vertical-align: top;
+}
+
+#content .ShortConfirmMsg {
+  font-size: 9pt;
+  font-weight: bold;
+  color: #04b810;
+}
+
+#content div.WaitingLoadingPageMsg {
+  position: absolute;
+  top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 5em;
+  text-align: center;
+}
+
+#content div.WaitingLoadingPageMsg p {
+  width: 50%;
+  height: 4em;
+  background-color: #eee;
+  border: 1px solid #000;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em 1em 1em 1em;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+.AowProgress0_33 {
+  padding-left: 16px;
+  //width: 16px;
+  background: url('Done0.jpg') no-repeat;
+}
+
+.AowProgress34_66 {
+  padding-left: 31px;
+  //width: 31px;
+  background: url('Done34.jpg') no-repeat;
+}
+
+.AowProgress67_99 {
+  padding-left: 46px;
+  //width: 46px;
+  background: url('Done67.jpg') no-repeat;
+}
+
+.AowProgress100 {
+  padding-left: 64px;
+  //width: 64px;
+  background: url('Done100.jpg') no-repeat;
+}
+
+.Label {
+  font-size: 8pt;
+  font-weight: bold;
+  text-align: justify;
+  color: #000;
+}
+
+.Value {
+  font-size: 8pt;
+  text-align: justify;
+  color: #000;
+}
+
+.History {
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  text-align: justify;
+  color: #000;
+}
+
+.Explanation {
+  font-size: 8pt;
+  text-align: justify;
+  color: #000;
+}
+
+
+/***** Content page styles *****/
+#content #page {
+  margin: 0 0 0 14.5em;
+  padding: .5em 1em .5em 1em !important;
+  padding: .5em .2em .5em .2em;
+}
+
+
+/***** Content contextual menu styles *****/
+#content #contextualmenu {
+  position: absolute;
+  left: .5em;
+  width: 14em;
+  min-height: 37.4em !important;
+  margin: 0 0 0 .2em;
+  padding: .5em .5em .5em 0;
+  //text-align: left;
+}
+
+#content #contextualmenu h3 {
+  width: 12.5em;
+  padding: 0;
+  margin: 0;
+  margin-top: 3em;
+  background: #cecbff url(menutitre.png);
+  font-size: 1em;
+  font-weight: bold;
+  border: 1px solid #000084;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-topright: 8px;
+  color: #31458c;
+  text-align: center;
+}
+
+#content #contextualmenu ul {
+  width: 12.5em;
+  margin: 0;
+  padding: 0;
+  padding-top: .5em;
+  background: #ebebff;
+  list-style-image: url(menupuce.png);
+  border-left: 1px solid #000084;
+  border-right: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  -moz-border-radius-bottomleft: 8px;
+  -moz-border-radius-bottomright: 8px;
+}
+
+#content #contextualmenu li {
+  margin-right: .5em;
+  margin-left: 1.8em;
+  margin-bottom: .7em;
+  font-size: .85em;
+}
+
+#content #contextualmenu li.selected {
+  list-style-image: url(menuselect.png);
+}
+
+#content #contextualmenu li.separator {
+  width: 11em;
+  margin-top: -.6em;
+  margin-bottom: .8em;
+  //margin-left: 0;
+  list-style: none;
+  list-style-image: url('');
+  border-bottom: 3px groove #ccc;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content #contextualmenu li a {
+  //font-size: 1em;
+  color: #000084;
+}
+
+#content #contextualmenu li a:hover {
+  color: #c63;
+}
+
+#content #contextualmenu ul hr {
+  text-align: center;
+}
+
+#content #contextualmenu p.UserInfos {
+  width: 80%;
+  margin-bottom: 1em;
+  font-size: .8em;
+  color: #31458c;
+  text-align: center;
+}
+
+
+/***** Shortcut Menu styles *****/
+#content table.shortcutmenu {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#content ul.shortcutmenu {
+  list-style-type: none;
+}
+
+#content ul.shortcutmenu li {
+  display: inline;
+  margin-right: .5em;
+  font-size: .85em !important;
+  font-size: .7em;
+}
+
+#content ul.shortcutmenu a {
+  color: #00f;
+  text-decoration: none;
+}
+
+#content ul.shortcutmenu a:hover {
+  color: #f00;
+  text-decoration: underline;
+}
+
+
+/***** Content news styles of the index page *****/
+#content div.CommunicationArea {
+  width: 99%;
+  border: 1px dashed #f00;
+  margin-bottom: 2em;
+  padding: 2px;
+  position: relative;
+  font-size: .85em;
+  font-weight: bold;
+  text-align: center;
+  color: #f00;
+}
+
+#content div.CommunicationArea span.EvenRotateMsg {
+  color: #f00;
+}
+
+#content div.CommunicationArea span.OddRotateMsg {
+  color: #00f;
+}
+
+
+/***** Content table styles *****/
+#content div.table {
+  text-align: center;
+  width: 100%;
+}
+
+#content div.table table {
+  margin: 2em auto 2em auto;
+  font-size: .85em;
+  border-left: 1px solid #000084;
+  text-align: center;
+}
+
+#content div.table th {
+  padding: .1em 1em .1em 1em;
+  background: #cecbff url('menutitre.png');
+  border-top: 1px solid #000084;
+  border-right: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  //font-size: .87em;
+}
+
+#content div.table th a, #content div.table td a {
+  font-weight: normal;
+  text-decoration: none;
+  //font-size: 1em;
+}
+
+#content div.table th a:hover, #content div.table td a:hover {
+  text-decoration: underline;
+  color: #f00;
+}
+
+#content div.table td {
+  padding: .1em 1em .1em 1em;
+  border-bottom: 1px solid #000084;
+  border-right: 1px solid #000084;
+}
+
+#content div.table td.odd {
+  background: #fff;
+}
+
+#content div.table td.even {
+  background: #f0f0ff;
+}
+
+#content div.table td.textLeft {
+  text-align: left;
+}
+
+
+/***** Content previous and next styles *****/
+#content div.prevnext {
+  text-align: center;
+  width: 100%;
+}
+
+#content div.prevnext table {
+  margin: 0em auto 0em auto;
+  border: 0px;
+  font-size: .85em;
+}
+
+#content div.prevnext td {
+  border: 0px;
+  white-space: nowrap;
+}
+
+#content div.prevnext td.prev a, a.prev {
+  padding-left: 16px;
+  background: url('previous.gif') no-repeat left;
+  color: #f00;
+}
+
+#content div.prevnext td.next a, a.next {
+  padding-right: 17px;
+  background: url('next.gif') no-repeat right;
+  color: #f00;
+}
+
+#content div.prevnext td.prev a:hover, #content div.prevnext td.next a:hover, a.prev, a.next {
+  color: #00f;
+}
+
+#content div.prevnext td.page_n {
+  width: 80%;
+  //text-align: center;
+}
+
+#content div.prevnext td.page_n strong {
+  font-size: 1.3em;
+}
+
+#content div.prevnext td.page_n a {
+  color: #f00;
+}
+
+#content div.prevnext td.page_n a:hover {
+  color: #00f;
+}
+
+#content p.nbentriesfound {
+  margin-top: 2em;
+  text-align: center;
+}
+
+/***** Content separator styles *****/
+#content table.separator {
+  margin: 1.5em auto 1.5em auto;
+  height: 36px;
+}
+
+#content td.LeftSeparator {
+  background: #cecbff url('LeftSeparator.png') no-repeat;
+  width: 316px;
+  font-size: 1.5em !important;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  text-indent: 30px;
+}
+
+#content td.MiddleSeparator {
+  background: #cecbff url('MiddleSeparator.png') repeat-x;
+  width: 140px;
+}
+
+#content td.RightSeparator {
+  width: 22px;
+  background: #cecbff url('RightSeparator.png');
+}
+
+/***** Frames styles *****/
+#content table.Frame {
+  margin: 1.5em auto 1.5em auto;
+  border: 1px solid #000084;
+  text-align: center;
+}
+
+#content table.FrameMediaLoan {
+  margin: 1.5em auto 1.5em auto;
+  border: 1px solid #000084;
+  text-align: center;
+}
+
+#content td.Frame {
+  background-color: #cecbff;
+  padding: 5px 7px 5px 7px;
+  border: 0;
+}
+
+#content th.Frame {
+  background: #cecbff url('menutitre.png');
+  border: 0;
+  border-bottom: 1px solid #000084;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  color: #31458c;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#content table.SubLevelsAowFrame, table.AowFilesFrame, #content table.AowCallsFrame, #content table.AowMatDeliveriesFrame, #content table.AowMatReceptionsFrame, #content table.AowActionsFrame, #content table.AowInfoLinksFrame, #content table.UploadFileFrame, #content table.SubstituteSMProjectsFrame, #content table.AowDialogsFrame, #content table.MatDeliveryDocumentsFrame, #content table.MatReceptionDocumentsFrame {
+  margin: 20px auto 20px auto;
+  border: 1px solid #000084;
+}
+
+#content td.SubLevelsAowFrame, #content td.AowFilesFrame, #content td.AowCallsFrame, #content td.AowMatDeliveriesFrame, #content td.AowMatReceptionsFrame, #content td.AowActionsFrame, #content td.AowInfoLinksFrame, #content td.AowDialogsFrame, #content td.MatDeliveryDocumentsFrame, #content td.MatReceptionDocumentsFrame, #content td.SubstituteSMProjectsFrame {
+  background: #fff;
+  padding: 5px 7px 5px 7px;
+  text-align: justify;
+}
+
+#content td.UploadFileFrame {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #000084;
+  text-align: left;
+}
+
+#content th.SubLevelsAowFrame, #content th.AowFilesFrame, #content th.AowCallsFrame, #content th.AowMatDeliveriesFrame, #content th.AowMatReceptionsFrame, #content th.AowActionsFrame, #content th.AowInfoLinksFrame, #content th.UploadFileFrame, #content th.AowDialogsFrame, #content th.MatDeliveryDocumentsFrame, #content th.MatReceptionDocumentsFrame {
+  background: #cecbff url('menutitre.png');
+  border-bottom: 1px solid #000084;
+  font-size: 9pt;
+  font-weight: bold;
+  color: #31458C;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#content th.SubstituteSMProjectsFrame {
+  background: #EBD9D6;
+  border-bottom: 1px solid #000084;
+  font-size: 9pt;
+  font-weight: bold;
+  color: #31458C;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#content table.DisplaySearch {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  vertical-align: middle;
+  border: 1px solid #000084;
+}
+
+#content td.DetailsObjectForm, #content td.DetailsAow, #content td.DetailsRemark, #content td.DetailsConstructorCall, #content td.DetailsMatDelivery, #content td.DetailsMatReception, #content td.CustomersComments, #content td.DetailsAowAction, #content td.DetailsAowInfoLink, #content td.SearchFrame, #content td.DetailsSite, #content td.DetailsNews, #content td.DetailsKnowledge, #content td.DetailsAction, #content td.DetailsPlanning, #content td.DetailsDocument {
+  background: #cecbff;
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 8pt;
+  text-align: justify;
+  color: #000;
+}
+
+#content div.TimesTable {
+  text-align: left;
+}
+
+#content table.TimesTable {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#content div.PurposeParticipantsTable, #content div.PurposeContraintsTable, #content div.PurposeSynthesisHistoryTable, #content div.PurposeSynthesisRisksTable {
+  text-align: left;
+  font-size: 1.2em !important;
+  font-size: 9pt;
+}
+
+#content table.PurposeParticipantsTable, #content table.PurposeContraintsTable, #content table.PurposeSynthesisHistoryTable, #content table.PurposeSynthesisRisksTable {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+
+/***** Forms styles *****/
+#content table.Form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 8pt;
+  font-weight: bold;
+  color: #000;
+  text-align: justify;
+  vertical-align: top;
+}
+
+#content table.Form td {
+  border: 0;
+}
+
+#content td.FormSpaceBetweenButtons {
+  width: 10px;
+}
+
+#content form {
+  margin : 4px 8px 4px 8px;
+  font-size: 8pt;
+  color: #000;
+}
+
+#content input.text {
+  border: #000084 1px solid;
+  font-size: 8pt;
+  color: #000;
+}
+
+#content input.file {
+  border: #000084 1px solid;
+  font-size: 8pt;
+  color: #000;
+}
+
+#content input.Readonly {
+  background: #bfbfbf;
+  color: #000;
+  font-size: 8pt;
+  border: #000084 1px solid;
+}
+
+#content input.password {
+  border: #000084 1px solid;
+  font-size: 8pt;
+  color: #000;
+
+}
+
+#content textarea {
+  padding: 2px 5px 2px 5px;
+  color: #000;
+  border: #000084 1px solid;
+}
+
+#content textarea.BigTextarea {
+  width: 98%;
+  min-width: 35em;
+  margin-right: .5em;
+}
+
+#content input.submit {
+  color: #000;
+  font-size: 8pt;
+}
+
+#content input.reset {
+  color: #000;
+  font-size: 8pt;
+}
+
+#content select, #content optgroup {
+  font-size: 8pt;
+  vertical-align : middle;
+}
+
+#content select option, #content optgroup option {
+  margin: 0;
+  color: #000;
+  font-size: 8pt;
+  vertical-align : middle;
+}
+
+#content select option.NotActivated, #content optgroup option.NotActivated, #content .NotActivated {
+  color: #f00;
+}
+
+#content table.validation {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content td.Label {
+  font-size: 8pt;
+  font-weight: bold;
+  text-align: justify;
+  color: #000;
+  height: 30px;
+  background: #cecbff;
+  border: 1px solid #000084;
+  padding: 2px 10px 2px 10px;
+}
+
+#content td.Value {
+  font-size: 8pt;
+  text-align: justify;
+  color: #000;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #000084;
+  padding: 2px 10px 2px 10px;
+}
+
+.PositiveBalance {
+  color: #008000 !important;
+}
+
+.NegativeBalance {
+  color: #f00 !important;
+}
+
+#content td.OverValue {
+  font-size: 8pt;
+  text-align: justify;
+  color: #f00;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #000084;
+  padding: 2px 40px 2px 10px;
+}
+
+#content .OverValue, .NegativeBalance  {
+  font-size: 8pt;
+  text-align: justify;
+  color: #f00 !important;
+}
+
+#content span.HiddenField {
+  background: #bbb;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: justify;
+  color: #000;
+}
+
+#content td.Action {
+  background: #ebd9d6;
+  border: 1px solid #000 !important;
+  width: 130px;
+  height: 20px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#content a.Action {
+  font-size: 8pt;
+  font-weight: normal;
+  color: #000084;
+}
+
+#content a.Action:hover {
+  color: #cc6633;
+}
+
+/***** Content files list styles *****/
+#content dl {
+  font-size: 8pt;
+}
+
+#content dt {
+  margin-left: 0;
+  padding-left: 16px;
+  background: url('puce.png') no-repeat;
+}
+
+#content dd {
+  margin-bottom: 1.5em;
+}
+
+#content td.AowFileBullet {
+  width: 12px;
+  background: url('puce.png') no-repeat;
+}
+
+#content .AowFiles {
+  font-size: 8pt;
+  text-align: left;
+  color: #000;
+  vertical-align: top;
+}
+
+#content a.AowFiles {
+  font-size: 8pt;
+  text-decoration: none;
+  color: #00f;
+}
+
+#content a.AowFiles:hover {
+  font-size: 8pt;
+  text-decoration: underline;
+  color: #f00;
+}
+
+.AllowedExtensions, .AccessRulesAowFiles {
+  font-size: 8pt;
+  text-align: left;
+  color: #000;
+  vertical-align: top;
+}
+
+
+/***** Personal parameters styles *****/
+#content table.YourParametersFrame {
+  margin: 20px auto 20px auto;
+  border: 1px solid #000084;
+}
+
+#content th.YourParametersFrame {
+  background: #ffaaad url('menutitre_pr.gif');
+  border-bottom: 1px solid #000084;
+  font-size: 9pt;
+  font-weight: bold;
+  color: #31458c;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#content td.YourParametersFrame {
+  background: #ffaaad;
+  padding: 0;
+  font-size: 8pt;
+  text-align: justify;
+  color: #000;
+}
+
+#content div.table th.DisplayYourParametersCaptions {
+  padding-top: 2px 10px 2px 10px;
+  background: #ffaaad url('menutitre_pr.gif');
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+}
+
+#content td.YourParametersLabel {
+  font-size: 8pt;
+  font-weight: bold;
+  text-align: justify;
+  color: #000;
+  height: 30px;
+  background: #ffaaad;
+  border: 1px solid #000084;
+  padding: 2px 10px 2px 10px;
+}
+
+
+/***** Footer styles *****/
+#footer {
+  display: none;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  background: #ccf repeat-x;
+  border-top: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+}
+
+#footer p{
+  margin: .5em 0 .5em 0;
+  font-size: .8em;
+  text-align: center;
+}
+
+#footer p img.w3c {
+  float: left;
+  margin-left: 1em;
+}
+
+#footer p a.w3c {
+  display: block;
+  float: right;
+  margin-top: -1em;
+  margin-right: 1em;
+}
+
+#footer p a.w3c img {
+  margin-top: -.2em;
+  border: 0;
+}

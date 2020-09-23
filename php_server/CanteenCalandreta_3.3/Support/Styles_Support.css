@@ -1,0 +1,906 @@
+/***** OpenID login form styles *****/
+input#openid_identifier {
+  background: #fff url('../GUI/Styles/openid.ico') no-repeat;
+  padding-left: 16px;
+}
+
+
+/***** General styles *****/
+#content dl.BillListForPayment {
+  font-size: 1em;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#content dl.BillListForPayment dt {
+  background: none;
+  margin-left: 0;
+  padding-left: 0;
+  font-weight: bold;
+}
+
+#content dl.BillListForPayment dd {
+  margin-left: 2em;
+  margin-bottom: .2em;
+  padding-left: 0;
+}
+
+#content .CompletedPayment {
+  color: #008000;
+  font-weight: bold;
+}
+
+#content .PaymentToRemoveOfBill {
+  text-decoration: blink;
+  color: #f00;
+  font-weight: bold;
+}
+
+#content td.AowFormSpace {
+  width: 40px;
+}
+
+.Instructions {
+  font-size: 7pt;
+  color: #000;
+}
+
+hr {
+  width: 80%;
+  height: 1px;
+  color: #000084;
+  text-align: center;
+}
+
+#content hr.Sep2Forms {
+  width: 80%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+p.AowStatusAlert {
+  display: inline;
+  margin-left: 2em;
+  padding: 10px 25px 5px 0;
+  background: url('../GUI/Styles/AowStatusAlert.gif') no-repeat center right;
+}
+
+.ValueValided {
+  color: #20a000;
+}
+
+.PlannedDate {
+  font-weight: bold;
+}
+
+.PlannedDateValided {
+  font-weight: bold;
+  color: #20a000;
+}
+
+.OverPlannedDate {
+  font-weight: bold;
+  color: #f00;
+}
+
+.OverValueValided {
+  color: #1a6d00;
+}
+
+.OverPlannedDateValided {
+  font-weight: bold;
+  color: #135e00;
+}
+
+td.SubLevelsAowSpace, td.AowFilesSpace {
+  width: 60px;
+}
+
+img.Affectation {
+  border: 0px;
+  vertical-align: middle;
+}
+
+a.Purposes, a.Actions {
+  font-size: 8pt;
+  text-decoration: none;
+  color: #00f;
+}
+
+a.Purposes:hover, a.Actions:hover {
+  font-size: 8pt;
+  text-decoration: underline;
+  color: #f00;
+}
+
+td.SupportValue {
+  font-size: 8pt;
+  text-align: justify;
+  color: #000;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #000084;
+  padding: 2px 10px 2px 10px;
+}
+
+img.CopyComment {
+  border: 0px;
+  vertical-align: middle;
+}
+
+#content table.TableList {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td.ListSpace {
+  width: 100px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+/***** Families and children *****/
+#content a.Desactivated {
+  color: #f00;
+}
+
+#content .Desactivated {
+  color: #f00;
+}
+
+
+#content span.PaymentNotTotalyUsed {
+  cursor: help;
+  color: #008000 !important;
+}
+
+
+/***** Plannings (canteen, nursery) *****/
+.AowPlnAvailable {
+  background: #008040;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+td.AowPlnNotAvailable {
+  background: #ebebeb;
+  text-align: center;
+  border: 1px solid #000084;
+  padding: 2px;
+}
+
+td.AowPlnNotAvailableAM {
+  background: #ebebeb;
+  text-align: center;
+  border-top: 1px solid #000084;
+  border-left: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  padding: 2px;
+}
+
+td.AowPlnNotAvailablePM {
+  background: #ebebeb;
+  text-align: center;
+  border-top: 1px solid #000084;
+  border-right: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  padding: 2px;
+}
+
+span.AowPlnNotAvailable {
+  background: #ebebeb;
+}
+
+
+/***** Payments synthesis *****/
+table.PaymentsSynthesisTable {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.PaymentsSynthesisTable th {
+  font-size: 1.2em;
+}
+
+table.PaymentsSynthesisTable td {
+  font-size: 1.2em;
+}
+
+span.CanteenWithMeal {
+  font-weight: bold;
+}
+
+
+/***** Planning styles *****/
+#content table.Planning {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  vertical-align: middle;
+  border: 1px solid #000084;
+}
+
+#CanteenPlanning thead.Scroll, #NurseryPlanning thead.Scroll {
+  display: block;
+}
+
+#CanteenPlanning thead.Scroll tr th {
+  width: 20px;
+  max-width: 20px;
+  min-width: 20px;
+  padding: 2px;
+}
+
+#NurseryPlanning thead.Scroll tr th {
+  width: 44px;
+  max-width: 44px;
+  min-width: 44px;
+  padding: 2px;
+}
+
+#CanteenPlanning thead.Scroll tr th.PlanningMonthCaption, #NurseryPlanning thead.Scroll tr th.PlanningMonthCaption {
+  width: 95px;
+  max-width: 95px;
+  min-width: 95px;
+  padding: 2px 5px 2px 5px;
+}
+
+#CanteenPlanning thead.Scroll th.PlanningTotalCaption, #NurseryPlanning thead.Scroll th.PlanningTotalCaption {
+  width: 42px;
+  max-width: 42px;
+  min-width: 42px;
+  padding: 2px 10px 2px 10px;
+}
+
+#NurseryPlanning thead.Scroll th.PlanningCaptionsHoliday {
+  width: 12px;
+  max-width: 12px;
+  min-width: 12px;
+  padding: 2px;
+  font-size: 8pt;
+  font-weight: normal;
+  text-align: center;
+  color: #000000;
+  border: 1px solid #000084;
+  background: #cecbff;
+}
+
+#CanteenPlanning tbody.Scroll, #NurseryPlanning tbody.Scroll {
+  /* To keep header of the table */
+  display: block;
+  height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#CanteenPlanning tbody.Scroll td.PlanningCaptions, #NurseryPlanning tbody.Scroll td.PlanningCaptionsAM, #NurseryPlanning tbody.Scroll td.PlanningCaptionsPM {
+  width: 20px;
+  max-width: 20px;
+  min-width: 20px;
+  padding: 2px;
+}
+
+#CanteenPlanning tbody.Scroll td.PlanningSupporter, #NurseryPlanning tbody.Scroll td.PlanningSupporter {
+  width: 95px;
+  max-width: 95px;
+  min-width: 95px;
+  padding: 2px 5px 2px 5px;
+}
+
+#NurseryPlanning tbody.Scroll td.PlanningCaptionsAMHoliday {
+  width: 1px;
+  max-width: 1px;
+  min-width: 1px;
+  padding: 2px;
+  border-top: 1px solid #000084;
+  border-left: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  background: #cecbff;
+}
+
+#NurseryPlanning tbody.Scroll td.PlanningCaptionsPMHoliday {
+  width: 1px;
+  max-width: 1px;
+  min-width: 1px;
+  padding: 2px;
+  border-top: 1px solid #000084;
+  border-right: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  background: #cecbff;
+}
+
+#content th.PlanningMonthCaption, #content td.PlanningMonthCaption, #content td.PlanningWeekCaption, #content th.PlanningTotalCaption, #content td.PlanningTotalCaption {
+  font-size: 8pt;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  border: 1px solid #000084;
+  padding: 2px 10px 2px 10px;
+  background: #cecbff;
+}
+
+#content td.PlanningTotalChild, #content td.PlanningTotalMoreMeals {
+  font-size: 8pt;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: right;
+  color: #000;
+  border: 1px solid #000084;
+  padding: 2px 20px 2px 10px;
+  background: #cecbff;
+}
+
+#content td.PlanningTotalDay {
+  font-size: 8pt;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  border: 1px solid #000084;
+  background: #fff;
+}
+
+#content td.PlanningTotalDayWarning {
+  font-size: 8pt;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  border: 1px solid #f00;
+  background: #fa6767;
+}
+
+#content td.PlanningTotalDayAM {
+  font-size: 7pt;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  border-top: 1px solid #000084;
+  border-left: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  background: #fff;
+}
+
+#content td.PlanningTotalDayPM {
+  font-size: 7pt;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  border-top: 1px solid #000084;
+  border-right: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  background: #fff;
+}
+
+#content td.PlanningTotalMonth {
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: right;
+  color: #000;
+  border: 1px solid #000084;
+  padding: 2px 20px 2px 10px;
+  background: #cecbff;
+}
+
+#content th.PlanningCaptions, #content td.PlanningCaptions, #content th.PlanningCaptionsHoliday {
+  font-size: 8pt;
+  font-weight: normal;
+  text-align: center;
+  color: #000000;
+  border: 1px solid #000084;
+  padding: 2px;
+  background: #cecbff;
+}
+
+#content th.PlanningCaptionsWarning {
+  font-size: 8pt;
+  font-weight: normal;
+  text-align: center;
+  color: #000000;
+  border: 1px solid #f00;
+  padding: 2px;
+  background: #fa6767;
+}
+
+#content td.PlanningCaptionsAM, #content td.PlanningCaptionsAMHoliday {
+  font-size: 7pt;
+  text-align: center;
+  color: #000000;
+  border-top: 1px solid #000084;
+  border-left: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  padding: 2px;
+  background: #cecbff;
+}
+
+#content td.PlanningCaptionsPM, #content td.PlanningCaptionsPMHoliday {
+  font-size: 7pt;
+  text-align: center;
+  color: #000000;
+  border-top: 1px solid #000084;
+  border-right: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  padding: 2px;
+  background: #cecbff;
+}
+
+#content td.PlanningMoreMealsCaption {
+  font-size: 7pt;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: left;
+  color: #000;
+  border: 1px solid #000084;
+  padding: 2px 10px 2px 10px;
+  background: #cecbff;
+}
+
+#content td.PlanningSplit {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border: 1px solid #000084;
+  background: #cecbff;
+}
+
+#content td.PlanningSplitMoreMeals {
+  height: 2em;
+  border: 1px solid #000084;
+  padding: 2px 5px 2px 5px;
+  background: #fff;
+}
+
+#content td.PlanningSupporter {
+  font-size: 7pt;
+  text-align: left;
+  color: #000;
+  border: 1px solid #000084;
+  padding: 2px 5px 2px 5px;
+  background: #f9db06;
+}
+
+#content td.PlanningMoreMeals {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border: 1px solid #000084;
+  background: #fff;
+}
+
+#content td.PlanningMoreMeals input.text {
+  font-size: 7pt !important;
+  padding: 0;
+  width: 15px;
+}
+
+#content td.PlanningWorkingDay {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border: 1px solid #000084;
+  padding: 2px;
+  background: #fff;
+}
+
+#content td.PlanningWorkingDayAM {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border-top: 1px solid #000084;
+  border-left: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  padding: 2px;
+  background: #fff;
+}
+
+#content td.PlanningWorkingDayPM {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border-top: 1px solid #000084;
+  border-right: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  padding: 2px;
+  background: #fff;
+}
+
+#content td.PlanningHoliday {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border: 1px solid #000084;
+  padding: 2px;
+  background: #c0c0c0;
+}
+
+#content td.PlanningHolidayAM {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border-top: 1px solid #000084;
+  border-left: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  padding: 2px;
+  background: #c0c0c0;
+}
+
+#content td.PlanningHolidayPM {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border-top: 1px solid #000084;
+  border-right: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  padding: 2px;
+  background: #c0c0c0;
+}
+
+span.PlanningHoliday {
+  background: #c0c0c0;
+}
+
+#content td.PlanningSupporterHoliday {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border: 1px solid #000084;
+  padding: 2px;
+  background: #f00;
+}
+
+#content td.PlanningSupporterFormation {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border: 1px solid #000084;
+  padding: 2px;
+  background: #00b900;
+}
+
+#content td.PlanningSupporterFormationNoPork {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border: 1px solid #000084;
+  padding: 2px;
+  background: #97fe97;
+}
+
+#content td.PlanningSupporterFormationPackedLunch {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border: 1px solid #000084;
+  padding: 2px;
+  background: #e1f943;
+}
+
+#content td.PlanningSupporterFormationAM {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border-top: 1px solid #000084;
+  border-left: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  padding: 2px;
+  background: #00b900;
+}
+
+#content td.PlanningSupporterFormationPM {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border-top: 1px solid #000084;
+  border-right: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  padding: 2px;
+  background: #00b900;
+}
+
+span.PlanningSupporterFormation {
+  background: #00b900;
+}
+
+span.PlanningSupporterFormationNoPork {
+  background: #97fe97;
+}
+
+span.PlanningSupporterFormationPackedLunch {
+  background: #e1f943;
+}
+
+#content td.PlanningSupporterOther {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border: 1px solid #000084;
+  padding: 2px;
+  background: #f7acec;
+}
+
+#content td.PlanningSupporterOtherAM {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border-top: 1px solid #000084;
+  border-left: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  padding: 2px;
+  background: #f7acec;
+}
+
+#content td.PlanningSupporterOtherPM {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border-top: 1px solid #000084;
+  border-right: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  padding: 2px;
+  background: #f7acec;
+}
+
+span.PlanningSupporterOther {
+  background: #f7acec;
+}
+
+#content td.PlanningNurseryDelayPM {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border-top: 1px solid #000084;
+  border-right: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  padding: 2px;
+  background: #ff8000;
+}
+
+span.PlanningNurseryDelayPM {
+  background: #ff8000;
+}
+
+#content td.NurseryPlanningCheckBoxError {
+  font-size: 8pt;
+  text-align: center;
+  color: #000;
+  border-top: 1px solid #000084;
+  border-right: 1px solid #000084;
+  border-bottom: 1px solid #000084;
+  padding: 2px;
+  background: #f00;
+}
+
+span.NurseryPlanningCheckBoxError {
+  background: #f00;
+}
+
+#content td a.ViewPlanning {
+  font-size: 6pt;
+  text-decoration: none;
+  color: #000;
+}
+
+#content td a.ViewPlanning:hover {
+  font-size: 6pt;
+  text-decoration: underline;
+  color: #fff;
+}
+
+#content a.DeletePlanningEntry {
+  font-size: 1.3em;
+}
+
+#content img.Help {
+  border: 0;
+  vertical-align: middle;
+}
+
+
+/**** Canteen synthesis ****/
+#content h2.PaymentsSynthesis {
+  margin: .5em auto 2.5em auto !important;
+  padding-left: 0 !important;
+  font-size: 1.7em !important;
+  text-align: center !important;
+}
+
+p.PaymentsSynthesisHeader {
+  margin-top: 0;
+  padding-top: 0;
+  text-align: left;
+}
+
+
+/**** Canteen synthesis ****/
+#content h2.CanteenSynthesis {
+  margin: 0 !important;
+  margin-top: 2.5em !important;
+  padding-left: 0 !important;
+  font-size: 1.7em !important;
+  text-align: left !important;
+}
+
+p.CanteenSynthesisHeader {
+  margin-top: 0;
+  padding-top: 0;
+  text-align: left;
+}
+
+#content h3.CanteenSynthesisOrderTitle {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+p.CanteenSynthesisFooter {
+  margin-top: 4em;
+  text-align: left;
+}
+
+p.CanteenSynthesisFooter span.CanteenSynthesisWarning {
+  padding-left: 5em;
+}
+
+#content table.CanteenSynthesisTable {
+  border: 1px solid #000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content table.CanteenSynthesisTable th {
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  padding: .1em 1em .1em 1em;
+  font-weight: bold;
+}
+
+#content table.CanteenSynthesisTable th.Caption {
+  background: #bfbdbd;
+}
+
+#content table.CanteenSynthesisTable td {
+  padding: .1em 1em .1em 1em;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+#content table.CanteenSynthesisTable td.CanteenSynthesisQuantityUpdated {
+  color: #f00;
+}
+
+
+/***** Nursery delays styles *****/
+#content dl.NurseryDelaysOfMonth dt {
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 1em;
+}
+
+#content dl.NurseryDelaysOfMonth dd {
+  margin-bottom: .5em;
+}
+
+
+/***** Snack styles *****/
+#content div table.SnackPlanningTable {
+  font-size: 1em;
+}
+
+#content div table.SnackPlanningTable .done {
+  color: #00b900;
+}
+
+
+/***** Laundry styles *****/
+#content div table.LaundryPlanningTable, #content table .done {
+  font-size: 1em;
+}
+
+#content div table.LaundryPlanningTable .done {
+  color: #00b900;
+}
+
+
+/***** Event styles *****/
+#content .RegistrationsClosed {
+  text-decoration: blink;
+  color: #f00;
+  font-weight: bold;
+}
+
+#content table.event_communication td.recipients {
+    vertical-align: text-top;
+    padding-left: 1em;
+}
+
+#content table.event_communication h4 {
+    margin: 0;
+}
+
+#content dl.EventInfos dt {
+    padding-left: 0;
+    background: none;
+    font-weight: bold;
+}
+
+#content dl.EventInfos dd {
+  margin-bottom: 0;
+}
+
+#content td.RequestorPartToFill, #content td.AcceptorPartToFill {
+    text-decoration: blink;
+    color: #fb4a21;
+}
+
+
+/***** Progress bar styles *****/
+p.UOProgress0_33 {
+  padding: 0;
+  text-align: left;
+  font-weight: bold;
+  width: 16px;
+  background: url('../GUI/Styles/Done0.jpg') no-repeat 0px 2px;
+  display: inline;
+}
+
+p.UOProgress34_66 {
+  padding: 0;
+  text-align: left;
+  font-weight: bold;
+  width: 31px;
+  background: url('../GUI/Styles/Done34.jpg') no-repeat 0px 2px;
+  display: inline;
+}
+
+p.UOProgress67_99 {
+  padding: 0;
+  text-align: left;
+  font-weight: bold;
+  width: 46px;
+  background: url('../GUI/Styles/Done67.jpg') no-repeat 0px 2px;
+  display: inline;
+}
+
+p.UOProgress100 {
+  padding: 0;
+  text-align: left;
+  font-weight: bold;
+  color: #fff;
+  width: 64px;
+  background: url('../GUI/Styles/Done100.jpg') no-repeat 0px 2px;
+  display: inline;
+}
+
+p.UOProgressOver100 {
+  padding: 3px 0 0 0;
+  text-align: left;
+  font-weight: bold;
+  color: #fff;
+  width: 72px;
+  height: 19px;
+  background: url('../GUI/Styles/DoneOver100.png') no-repeat 0px 0px;
+  display: inline;
+}
+
+
+/***** Send messages styles *****/
+#content #objRecipientsList {
+  margin-top: 3px;
+  min-height: 30px;
+  border: 1px solid #000084;
+  background: #dbd9d7;
+}
+
+#content td.JobParameterValue {
+  max-width: 600px;
+  word-wrap: break-word;
+}
+
+
+/***** Config parameters styles *****/
+#content .ConfigParameterRenderIntro {
+  font-weight: bold;
+  text-decoration: underline;
+}

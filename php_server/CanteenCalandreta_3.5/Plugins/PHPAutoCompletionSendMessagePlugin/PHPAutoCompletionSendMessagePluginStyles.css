@@ -1,0 +1,41 @@
+div.FormFieldAutoCompletionlist_update {
+  position: absolute;
+  width: 250px;
+  background: #fff;
+  border: 1px solid #888;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.FormFieldAutoCompletionlist_update ul.FormFieldAutoCompletionList {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  max-height: 15em;
+  overflow: scroll;
+}
+
+div.FormFieldAutoCompletionlist_update ul.FormFieldAutoCompletionList li {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 2px;
+  font-family: Arial, Helvetica, serif;
+  font-size: 8pt;
+}
+
+div.FormFieldAutoCompletionlist_update ul.FormFieldAutoCompletionList li.selected {
+  background-color: #3366cc;
+  cursor: pointer;
+  color: #fff;
+}
+
+div.AutoCompletionSendMessageItem {
+  margin: 2px;
+  padding: 1px;
+  border: 1px solid #f0b133;
+  background: #fcf7e7;
+  display: inline-block;
+  cursor: pointer;
+}

@@ -1,0 +1,265 @@
+body {
+  font-family: Verdana, Times New Roman, Arial, Helvetic;
+}
+
+.BigTitle {
+  font-size: 24pt;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  vertical-align: top;
+}
+
+h2 {
+  font-size: 14pt;
+}
+
+.Paragraph {
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-indent: 40px;
+  text-align: justify;
+  color: #000;
+  vertical-align: top;
+}
+
+.Instructions {
+  font-size: 7pt;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  color: #000;
+}
+
+.PositiveBalance {
+  color: #008000 !important;
+}
+
+.NegativeBalance {
+  color: #f00 !important;
+}
+
+span.CanteenWithMeal {
+  font-weight: bold;
+}
+
+hr {
+  width: 80%;
+  height; 1px;
+  color: #000;
+  align: center;
+}
+
+a {
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: underline;
+  color: #00f;
+}
+
+a.notprintable, p.notprintable {
+  display: none;
+}
+
+table.Data, #content table.Data {
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  vertical-align: middle;
+  border: 1px solid #000;
+}
+
+th.Data, #content table.Data th {
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  height: 30px;
+  background-color: #C0C0C0;
+  border: 1px solid #000;
+  padding: 2px 10px 2px 10px;
+}
+
+td.Data, #content table.Data td {
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: justify;
+  color: #000;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 2px 10px 2px 10px;
+}
+
+td.DataFreeList {
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: justify;
+  color: #000;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 2px 10px 2px 10px;
+  line-height: 250%;
+}
+
+td.DataTop {
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: justify;
+  vertical-align: top;
+  color: #000;
+  height: 30px;
+  background-color: #000;
+  border: 1px solid #000;
+  padding: 2px 10px 2px 10px;
+}
+
+td.Label {
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: justify;
+  color: #000;
+  height: 30px;
+  background-color: #C0C0C0;
+  border: 1px solid #000;
+  padding: 2px 10px 2px 10px;
+}
+
+td.FootData {
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: justify;
+  color: #000;
+  height: 30px;
+  background-color: #C0C0C0;
+  border: 1px solid #000;
+  padding: 2px 10px 2px 10px;
+}
+
+#content table.Frame, table.Frame {
+  margin: 20px 10px 20px 10px;
+  border: 1px solid #000;
+}
+
+#content td.Frame, td.Frame {
+  background-color: #fff;
+  padding: 0;
+}
+
+#content th.Frame, th.Frame {
+  background: #fff;
+  border: 2px solid #000;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+/**** Payments synthesis ****/
+#content h2.PaymentsSynthesis {
+  margin: .5em auto 2.5em auto !important;
+  padding-left: 0 !important;
+  font-size: 1.7em !important;
+  text-align: center !important;
+}
+
+#content p.PaymentsSynthesisHeader {
+  margin-top: 0;
+  padding-top: 0;
+  text-align: left;
+}
+
+
+/**** Canteen sysnthesis ****/
+#content h2.CanteenSynthesis {
+  margin: 0 !important;
+  margin-top: 2.5em !important;
+  padding-left: 0 !important;
+  font-size: 1.7em !important;
+  text-align: left !important;
+}
+
+p.CanteenSynthesisHeader {
+  margin-top: 0;
+  padding-top: 0;
+  text-align: left;
+}
+
+#content h3.CanteenSynthesisOrderTitle {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+p.CanteenSynthesisFooter {
+  margin-top: 4em;
+  text-align: left;
+}
+
+p.CanteenSynthesisFooter span.CanteenSynthesisWarning {
+  padding-left: 5em;
+}
+
+#content table.CanteenSynthesisTable {
+  border: 1px solid #000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content table.CanteenSynthesisTable th {
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  padding: .1em 1em .1em 1em;
+  font-weight: bold;
+}
+
+#content table.CanteenSynthesisTable th.Caption {
+  background: #bfbdbd;
+}
+
+#content table.CanteenSynthesisTable td {
+  padding: .1em 1em .1em 1em;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+#content table.CanteenSynthesisTable td.CanteenSynthesisQuantityUpdated {
+  color: #f00;
+}
+
+
+/**** Snack and laundry plannings ****/
+#content table .done {
+  background: #ddd;
+}

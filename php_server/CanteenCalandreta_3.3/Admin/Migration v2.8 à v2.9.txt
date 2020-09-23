@@ -1,0 +1,78 @@
+1) Création de la table Alias :
+-- 
+-- Structure de la table `Alias`
+-- 
+
+CREATE TABLE `Alias` (
+  `AliasID` smallint(5) unsigned NOT NULL auto_increment,
+  `AliasName` varchar(50) NOT NULL,
+  `AliasDescription` varchar(255) default NULL,
+  `AliasMailingList` mediumtext NOT NULL,
+  PRIMARY KEY  (`AliasID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Table which contains alias.';
+
+
+2) Création de la table Donations
+-- 
+-- Structure de la table `Donations`
+-- 
+
+CREATE TABLE `Donations` (
+  `DonationID` mediumint(8) unsigned NOT NULL auto_increment,
+  `DonationReference` varchar(20) NOT NULL,
+  `DonationEntity` tinyint(3) unsigned NOT NULL default '0',
+  `DonationLastname` varchar(100) NOT NULL,
+  `DonationFirstname` varchar(25) NOT NULL,
+  `DonationAddress` varchar(255) NOT NULL,
+  `DonationPhone` varchar(30) default NULL,
+  `DonationMainEmail` varchar(100) default NULL,
+  `DonationSecondEmail` varchar(100) default NULL,
+  `DonationFamilyRelationship` tinyint(3) unsigned NOT NULL default '0',
+  `DonationReceptionDate` date NOT NULL,
+  `DonationType` tinyint(3) unsigned NOT NULL default '0',
+  `DonationNature` tinyint(3) unsigned NOT NULL default '0',
+  `DonationValue` decimal(10,2) NOT NULL,
+  `DonationReason` varchar(255) default NULL,
+  `DonationPaymentMode` tinyint(3) unsigned NOT NULL default '0',
+  `DonationPaymentCheckNb` varchar(30) default NULL,
+  `BankID` smallint(5) unsigned default NULL,
+  `TownID` smallint(5) unsigned NOT NULL,
+  `FamilyID` smallint(5) unsigned default NULL,
+  PRIMARY KEY  (`DonationID`),
+  KEY `TownID` (`TownID`,`FamilyID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Table which contains donations.';
+
+3) Création des tables Jobs et JobParameters
+-- 
+-- Structure de la table `JobParameters`
+-- 
+
+CREATE TABLE `JobParameters` (
+  `JobParameterID` int(10) unsigned NOT NULL auto_increment,
+  `JobParameterName` varchar(50) NOT NULL,
+  `JobParameterValue` mediumblob NOT NULL,
+  `JobID` mediumint(8) unsigned NOT NULL,
+  PRIMARY KEY  (`JobParameterID`),
+  KEY `JobID` (`JobID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Table which contains parameters of jobs to execute.';
+
+-- --------------------------------------------------------
+
+-- 
+-- Structure de la table `Jobs`
+-- 
+
+CREATE TABLE `Jobs` (
+  `JobID` mediumint(8) unsigned NOT NULL auto_increment,
+  `JobPlannedDate` datetime NOT NULL,
+  `JobExecutionDate` datetime default NULL,
+  `JobType` tinyint(3) unsigned NOT NULL default '1',
+  `JobNbTries` tinyint(3) unsigned NOT NULL default '0',
+  `JobResult` varchar(255) default NULL,
+  `SupportMemberID` smallint(5) unsigned NOT NULL,
+  PRIMARY KEY  (`JobID`),
+  KEY `JobType` (`JobType`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Table which contains jobs to execute.';
+
+
+4) MAJ fichiers php/js/css

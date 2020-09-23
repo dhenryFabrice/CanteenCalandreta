@@ -1,0 +1,21 @@
+ul.JSTextareaPlugin {
+  padding: 0px;
+  list-style-type: none;
+  margin-left: 0;
+  margin-bottom: -4px;
+  clear: both;
+}
+
+li.JSTextareaPlugin {
+  margin-bottom: -4px;
+  padding: 4px;
+  display: inline;
+  cursor: pointer;
+}
+
+textarea.JSTextareaNoToolbarPlugin {
+  margin-top: 1em;
+}
+
+
+

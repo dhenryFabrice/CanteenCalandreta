@@ -1,0 +1,58 @@
+#content table.PurposeSynthesisHistoryTable div {
+  margin: 0;
+}
+
+#content table.PurposeSynthesisHistoryTable div table {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#content table.PurposeSynthesisHistoryTable div table th {
+  border: 0;
+  margin: 0;
+}
+
+#content table.PurposeSynthesisHistoryTable div table td {
+  border: 0;
+  margin: 0;
+  padding: 2px;
+}
+
+.dynCalendar_header, #content table.PurposeSynthesisHistoryTable div table .dynCalendar_header{
+        font-family: Arial, Verdana, Helvetica, Sans-Serif;
+        font-size: 10pt;
+        font-weight: bold;
+}
+
+.dynCalendar_dayname, #content table.PurposeSynthesisHistoryTable div table .dynCalendar_dayname{
+        background-color: #eee;
+        border: 1px solid #c0c0c0;
+        font-family: Arial, Verdana, Helvetica, Sans-Serif;
+        font-size: 8pt;
+        text-align: center;
+}
+
+.dynCalendar_day, #content table.PurposeSynthesisHistoryTable div table .dynCalendar_day{
+        background-color: #eee;
+        color: #000;
+        font-family: Arial, Verdana, Helvetica, Sans-Serif;
+        font-size: 8pt;
+}
+
+.dynCalendar_today, #content table.PurposeSynthesisHistoryTable div table .dynCalendar_today{
+        background-color: #fff;
+        border: 1px solid #c0c0c0;
+        font-family: Arial, Verdana, Helvetica, Sans-Serif;
+        font-size: 8pt;
+}
+
+.dynCalendar{
+        background-color: #c0c0c0;
+        border: 2px outset white;
+        visibility: hidden;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+}
+

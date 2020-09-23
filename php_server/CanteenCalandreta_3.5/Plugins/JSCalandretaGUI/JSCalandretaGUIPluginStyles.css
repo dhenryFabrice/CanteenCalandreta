@@ -1,0 +1,499 @@
+/************************************ Styles.css ***************************************/
+body, #webpage, #page {
+  background-color: #fdfde3;
+}
+
+/***** Header styles *****/
+#header {
+  background: #f7e3a1 url('header.jpg') repeat-x;
+  border-bottom: 1px solid #f0b133;
+}
+
+#header h1 {
+  background: url('CanteenCalandreta.png') no-repeat;
+  color: #fff;
+  font-style: italic;
+}
+
+
+/***** Main menu styles *****/
+#mainmenu {
+  border-bottom: 1px solid #f0b133;
+}
+
+#mainmenu a {
+  color: #6a2b3c !important;
+}
+
+
+/***** Content page styles *****/
+#content {
+  background: #fdfde3 !important;
+}
+
+#content h1, #content h2, #content h3 {
+  color: #6a2b3c;
+}
+
+
+/***** Content contextual menu styles *****/
+#content #contextualmenu h3 {
+  background: #f7e3a1;
+  border: 1px solid #f0b133;
+  color: #6a2b3c;
+}
+
+#content #contextualmenu ul {
+  background: #fcf0cf;
+  list-style-image: url(menupuce.png);
+  border-left: 1px solid #f0b133;
+  border-right: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+}
+
+#content #contextualmenu li a {
+  color: #6a2b3c;
+}
+
+#content #contextualmenu li a:hover {
+  color: #000;
+}
+
+#content #contextualmenu p.UserInfos {
+  color: #6a2b3c;
+}
+
+
+/***** Shortcut Menu styles *****/
+
+
+/***** Content news styles of the index page *****/
+
+
+/***** Content table styles *****/
+#content div.table table {
+  border-left: 1px solid #f0b133;
+}
+
+#content div.table th {
+  background: #f7e3a1 url('menutitre.png') center;
+  border-top: 1px solid #f0b133;
+  border-right: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+}
+
+#content div.table td {
+  border-bottom: 1px solid #f0b133;
+  border-right: 1px solid #f0b133;
+}
+
+#content div.table td.even {
+  background: #fcf7e7;
+}
+
+
+/***** Content previous and next styles *****/
+
+
+/***** Content separator styles *****/
+#content td.LeftSeparator {
+  background: #fdfde3 url('LeftSeparator.png') no-repeat !important;
+}
+
+#content td.MiddleSeparator {
+  background: #fdfde3 url('MiddleSeparator.png') repeat-x !important;
+}
+
+#content td.RightSeparator {
+  background: #fdfde3 url('RightSeparator.png') !important;
+}
+
+
+/***** Frames styles *****/
+#content table.Frame {
+  border: 1px solid #f0b133;
+}
+
+#content table.FrameMediaLoan {
+  border: 1px solid #f0b133;
+}
+
+#content td.Frame {
+  background-color: #f7e3a1;
+}
+
+#content th.Frame {
+  background: #f7e3a1 url('menutitre.png') center;
+  border-bottom: 1px solid #f0b133;
+  color: #6a2b3c;
+}
+
+#content table.SubLevelsAowFrame, table.AowFilesFrame, #content table.AowCallsFrame, #content table.AowMatDeliveriesFrame, #content table.AowMatReceptionsFrame, #content table.AowActionsFrame, #content table.AowInfoLinksFrame, #content table.UploadFileFrame, #content table.SubstituteSMProjectsFrame, #content table.AowDialogsFrame, #content table.MatDeliveryDocumentsFrame, #content table.MatReceptionDocumentsFrame {
+  border: 1px solid #f0b133;
+}
+
+#content td.UploadFileFrame {
+  border: 1px solid #f0b133;
+}
+
+#content th.SubLevelsAowFrame, #content th.AowFilesFrame, #content th.AowCallsFrame, #content th.AowMatDeliveriesFrame, #content th.AowMatReceptionsFrame, #content th.AowActionsFrame, #content th.AowInfoLinksFrame, #content th.UploadFileFrame, #content th.AowDialogsFrame, #content th.MatDeliveryDocumentsFrame, #content th.MatReceptionDocumentsFrame {
+  background: #f7e3a1 url('menutitre.png') center;
+  border-bottom: 1px solid #f0b133;
+  color: #6a2b3c;
+}
+
+#content th.SubstituteSMProjectsFrame {
+  border-bottom: 1px solid #f0b133;
+  color: #6a2b3c;
+}
+
+#content table.DisplaySearch {
+  border: 1px solid #f0b133;
+}
+
+#content td.DetailsObjectForm, #content td.DetailsAow, #content td.DetailsRemark, #content td.DetailsConstructorCall, #content td.DetailsMatDelivery, #content td.DetailsMatReception, #content td.CustomersComments, #content td.DetailsAowAction, #content td.DetailsAowInfoLink, #content td.SearchFrame, #content td.DetailsSite, #content td.DetailsNews, #content td.DetailsKnowledge, #content td.DetailsAction, #content td.DetailsPlanning, #content td.DetailsDocument {
+  background: #f7e3a1;
+}
+
+
+/***** Forms styles *****/
+#content input.text {
+  border: #f0b133 1px solid;
+}
+
+#content input.file {
+  border: #f0b133 1px solid;
+}
+
+#content input.Readonly {
+  border: #f0b133 1px solid;
+}
+
+#content input.password {
+  border: #f0b133 1px solid;
+}
+
+#content textarea {
+  border: #f0b133 1px solid;
+}
+
+#content td.Label {
+  background: #f7e3a1;
+  border: 1px solid #f0b133;
+}
+
+#content td.Value {
+  border: 1px solid #f0b133;
+}
+
+#content td.OverValue {
+  border: 1px solid #f0b133;
+}
+
+#content a.Action {
+  color: #000084;
+}
+
+
+/***** Content files list styles *****/
+#content dt {
+  background: url('puce.png') no-repeat;
+}
+
+
+/***** Customer/Support Comments styles *****/
+#content table.Comments {
+  border: 1px solid #f0b133;
+}
+
+#content td.CommentRecipients {
+  border: 1px solid #f0b133;
+}
+
+#content td.CommentDate {
+  border: 1px solid #f0b133;
+}
+
+#content td.CommentSubject {
+  border: 1px solid #f0b133;
+}
+
+#content td.CommentInCopy {
+  border: 1px solid #f0b133;
+}
+
+
+/***** Personal parameters styles *****/
+#content table.YourParametersFrame {
+  border: 1px solid #f0b133;
+}
+
+#content th.YourParametersFrame {
+  border-bottom: 1px solid #f0b133;
+  color: #6a2b3c;
+}
+
+#content td.YourParametersLabel {
+  border: 1px solid #f0b133;
+}
+
+
+/***** Footer styles *****/
+#footer {
+  background: #f7e3a1 repeat-x;
+  border-top: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+}
+
+
+/************************************ Styles_support.css ***************************************/
+hr {
+  color: #008400;
+}
+
+td.SupportValue {
+  border: 1px solid #f0b133;
+}
+
+/***** Canteen planning *****/
+#content table.Planning {
+  border: 1px solid #f0b133;
+}
+
+#CanteenPlanning th, #CanteenPlanning td {
+  border: 1px solid #f0b133 !important;
+}
+
+#content th.PlanningMonthCaption, #content th.PlanningWeekCaption, #content th.PlanningCaptions, #content th.PlanningTotalCaption, #content th.PlanningTotalChild {
+  background: #f7e3a1;
+  border: 1px solid #f0b133;
+}
+
+#content td.PlanningCaptions, #content td.PlanningSplit, #content td.PlanningTotalChild, #content td.PlanningMoreMealsCaption, #content td.PlanningTotalCaption, #content td.PlanningTotalMoreMeals, #content td.PlanningTotalMonth {
+  background: #f7e3a1;
+  border: 1px solid #f0b133 !important;
+}
+
+td.AowPlnNotAvailable {
+  border: 1px solid #f0b133;
+}
+
+
+/***** Nursery planning *****/
+#content th.PlanningCaptionsHoliday {
+  border: 1px solid #f0b133 !important;
+  background: #f7e3a1 !important;
+}
+
+#content td.PlanningSupporter, td.PlanningSplitMoreMeals, #content td.PlanningTimeSlot {
+  border: 1px solid #f0b133 !important;
+}
+
+#content td.PlanningAvailableTimeSlot {
+  border-top: 1px dashed #f0b133 !important;
+  border-bottom: 1px dashed #f0b133 !important;
+  border-left: 1px solid #f0b133 !important;
+  border-right: 1px solid #f0b133 !important;
+}
+
+#content td.PlanningAvailableTimeSlotLeft {
+  border-top: 1px dashed #f0b133 !important;
+  border-bottom: 1px dashed #f0b133 !important;
+  border-left: 1px solid #f0b133 !important;
+  border-right: 1px dashed #f0b133 !important;
+}
+
+#content td.PlanningAvailableTimeSlotRight {
+  border-top: 1px dashed #f0b133 !important;
+  border-bottom: 1px dashed #f0b133 !important;
+  border-left: 1px dashed #f0b133 !important;
+  border-right: 1px solid #f0b133 !important;
+}
+
+#content td.PlanningAvailableTimeSlotBetween {
+  border: 1px dashed #f0b133 !important;
+}
+
+#content td.PlanningBookedTimeSlot {
+  border-top: 1px dashed #f0b133 !important;
+  border-bottom: 1px dashed #f0b133 !important;
+  border-left: 1px solid #f0b133 !important;
+  border-right: 1px solid #f0b133 !important;
+}
+
+#content td.PlanningBookedTimeSlotLeft {
+  border-top: 1px dashed #f0b133 !important;
+  border-bottom: 1px dashed #f0b133 !important;
+  border-left: 1px solid #f0b133 !important;
+  border-right: 1px dashed #f0b133 !important;
+}
+
+#content td.PlanningBookedTimeSlotRight {
+  border-top: 1px dashed #f0b133 !important;
+  border-bottom: 1px dashed #f0b133 !important;
+  border-left: 1px dashed #f0b133 !important;
+  border-right: 1px solid #f0b133 !important;
+}
+
+#content td.PlanningBookedTimeSlotBetween {
+  border: 1px dashed #f0b133 !important;
+}
+
+#content td.PlanningCaptionsAM, #content td.PlanningCaptionsAMHoliday {
+  border-top: 1px solid #f0b133 !important;
+  border-left: 1px solid #f0b133 !important;
+  border-bottom: 1px solid #f0b133 !important;
+  background: #f7e3a1 !important;
+}
+
+#content td.PlanningCaptionsOtherTimeslot, #content td.PlanningCaptionsOtherTimeslotHoliday {
+  border-top: 1px solid #f0b133 !important;
+  border-bottom: 1px solid #f0b133 !important;
+  background: #f7e3a1 !important;
+}
+
+#content td.PlanningCaptionsPM, #content td.PlanningCaptionsPMHoliday {
+  border-top: 1px solid #f0b133 !important;
+  border-right: 1px solid #f0b133 !important;
+  border-bottom: 1px solid #f0b133 !important;
+  background: #f7e3a1 !important;
+}
+
+#content td.PlanningWorkingDayAM {
+  border-top: 1px solid #f0b133;
+  border-left: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+  background: #fff;
+}
+
+#content td.PlanningWorkingDayOtherTimeslot {
+  border-top: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+  background: #fff;
+}
+
+#content td.PlanningWorkingDayPM {
+  border-top: 1px solid #f0b133;
+  border-right: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+  background: #fff;
+}
+
+#content td.PlanningHoliday {
+  border: 1px solid #f0b133;
+  background: #c0c0c0;
+}
+
+#content td.PlanningHolidayAM {
+  border-top: 1px solid #f0b133;
+  border-left: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+  background: #c0c0c0;
+}
+
+#content td.PlanningHolidayOtherTimeslot {
+  border-top: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+  background: #c0c0c0;
+}
+
+#content td.PlanningHolidayPM {
+  border-top: 1px solid #f0b133;
+  border-right: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+  background: #c0c0c0;
+}
+
+#content td.PlanningTotalDay {
+  border: 1px solid #f0b133;
+  background: #fff;
+}
+
+#content td.PlanningTotalDayAM {
+  border-top: 1px solid #f0b133;
+  border-left: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+  background: #fff;
+}
+
+#content td.PlanningTotalDayOtherTimeslot {
+  border-top: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+  background: #fff;
+}
+
+#content td.PlanningTotalDayPM {
+  border-top: 1px solid #f0b133;
+  border-right: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+  background: #fff;
+}
+
+#content td.PlanningSupporterOtherAM {
+  border-top: 1px solid #f0b133;
+  border-left: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+  background: #f7acec;
+}
+
+#content td.PlanningSupporterOtherOtherTimeslot {
+  border-top: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+  background: #f7acec;
+}
+
+#content td.PlanningSupporterOtherPM {
+  border-top: 1px solid #f0b133;
+  border-right: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+  background: #f7acec;
+}
+
+td.AowPlnNotAvailableAM {
+  border-top: 1px solid #f0b133;
+  border-left: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+}
+
+td.AowPlnNotAvailableOtherTimeslot {
+  border-top: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+}
+
+td.AowPlnNotAvailablePM {
+  border-top: 1px solid #f0b133;
+  border-right: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+}
+
+#content td.PlanningSupporterFormationAM {
+  border-top: 1px solid #f0b133;
+  border-left: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+}
+
+#content td.PlanningSupporterFormationOtherTimeslot {
+  border-top: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+}
+
+#content td.PlanningSupporterFormationPM {
+  border-top: 1px solid #f0b133;
+  border-right: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+}
+
+#content td.PlanningNurseryDelayPM {
+  border-top: 1px solid #f0b133;
+  border-right: 1px solid #f0b133;
+  border-bottom: 1px solid #f0b133;
+}
+
+
+/***** Send messages styles *****/
+#content #objRecipientsList {
+  border: 1px solid #f0b133;
+}
+
+
+

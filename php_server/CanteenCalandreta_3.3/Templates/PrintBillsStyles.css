@@ -1,0 +1,180 @@
+body {
+  background: #fff;
+  font-family: Arial, Times New Roman, Verdana, Helvetic;
+  font-size: 11pt;
+  color: #000;
+}
+
+
+/**** Styles of the monthly bill ****/
+#page div.FamilyBill {
+  width: 14cm;
+  border: 1px solid #000;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .3cm .5cm .3cm .5cm;
+}
+
+#page div.FamilyBill table {
+  border: 0;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+#page div.FamilyBill table th.FamilyName, #page table.BillsOfPage td.FamilyBill table th.FamilyName {
+  font-weight: bold;
+  font-size: 14pt;
+  text-align: left;
+}
+
+#page div.FamilyBill table th.FamilyName em, #page table.BillsOfPage td.FamilyBill table th.FamilyName em {
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+#page div.FamilyBill table th.BillForDateLabel, #page table.BillsOfPage td.FamilyBill table th.BillForDateLabel {
+  font-size: 14pt;
+  text-align: left;
+  font-weight: normal;
+}
+
+#page div.FamilyBill table th.BillForDate, #page table.BillsOfPage td.FamilyBill table th.BillForDate {
+  padding-left: .5cm;
+  font-size: 12pt;
+  text-align: right;
+  font-weight: normal;
+}
+
+#page div.FamilyBill table td.Separator, #page table.BillsOfPage td.FamilyBill table td.Separator {
+  height: .5cm;
+}
+
+#page div.FamilyBill table td.BillDate, #page table.BillsOfPage td.FamilyBill table td.BillDate {
+  font-size: 14pt;
+  text-align: left;
+}
+
+#page div.FamilyBill table td.BillDate em, #page table.BillsOfPage td.FamilyBill table td.BillDate em {
+  padding-left: 1cm;
+  font-size: 12pt;
+  font-style: normal;
+}
+
+#page div.FamilyBill table td.PreviousBalance, #page div.FamilyBill table td.Deposit, #page table.BillsOfPage td.FamilyBill table td.PreviousBalance, page table.BillsOfPage td.FamilyBill table td.Deposit {
+  font-size: 10pt;
+  text-align: left;
+}
+
+#page div.FamilyBill table td.Label, #page table.BillsOfPage td.FamilyBill table td.Label {
+  padding-right: .5cm;
+  font-size: 12pt;
+  text-align: left;
+}
+
+#page div.FamilyBill table td.MonthYear, #page table.BillsOfPage td.FamilyBill table td.MonthYear {
+  font-size: 12pt;
+  text-align: left;
+  width: 4cm;
+}
+
+#page div.FamilyBill table td.NumberOf, #page table.BillsOfPage td.FamilyBill table td.NumberOf {
+  font-size: 12pt;
+  text-align: center;
+}
+
+#page div.FamilyBill table td.Amount, #page table.BillsOfPage td.FamilyBill table td.Amount {
+  font-size: 12pt;
+  text-align: right;
+}
+
+#page div.FamilyBill table td.BillSubTotalLabel, #page table.BillsOfPage td.FamilyBill table td.BillSubTotalLabel {
+  pading:right: 1cm;
+  font-size: 12pt;
+  text-align: right;
+}
+
+#page div.FamilyBill table td.BillTotalLabel, #page table.BillsOfPage td.FamilyBill table td.BillTotalLabel {
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-size: 14pt;
+  text-align: left;
+}
+
+#page div.FamilyBill table td.BillTotalAmount, #page table.BillsOfPage td.FamilyBill table td.BillTotalAmount {
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: right;
+}
+
+#page table.BillsOfPage {
+  border: 1px solid #000;
+  width: 26cm;
+  margin: 1cm auto .3cm auto;
+}
+
+#page table.BillsOfPage td.FamilyBill {
+  width: 13cm;
+  border: 1px solid #000;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .3cm .25cm .3cm .25cm;
+}
+
+
+/**** Styles of the annual bill ****/
+#page div.FamilyAnnualBill {
+  width: 17cm;
+  margin: 2cm auto 2cm auto;
+  padding: 0;
+}
+
+#page  div.FamilyAnnualBill table {
+  border: 1px solid #000;
+  font-size: 12pt;
+}
+
+#page div.FamilyAnnualBill table th {
+  border: 1px solid #000;
+  padding: .2cm;
+  font-weight: normal;
+  text-align: left;
+}
+
+#page div.FamilyAnnualBill table th.Year {
+  font-size: 16pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+#page div.FamilyAnnualBill table td {
+  border: 1px solid #000;
+  padding: .2cm;
+  text-align: left;
+}
+
+#page div.FamilyAnnualBill table td.PreviousBalance, #page div.FamilyAnnualBill table td.BillSubTotalAmount, #page div.FamilyAnnualBill table td.PaymentAmount, #page div.FamilyAnnualBill table td.CheckNb, #page div.FamilyAnnualBill table td.Balance {
+  text-align: right;
+}
+
+#page div.FamilyAnnualBill table td.TableFooter {
+  font-size: 10pt;
+}
+
+
+/**** Styles of links ****/
+@media screen {
+  #backlink {
+    margin-top: 1cm;
+    text-align: center;
+  }
+}
+
+@media print {
+  #backlink {
+    display: none;
+  }
+}
